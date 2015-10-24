@@ -1,10 +1,14 @@
 Package: ssalifetablesextended
 Type: Package
-Title: What the Package Does (Title Case)
+Title: Extend the SSA Lifetables to include every year based on linear interpolation
 Version: 0.1
 Date: 2015-10-24
-Author: Who wrote it
-Maintainer: Who to complain to <yourfault@somewhere.net>
-Description: More about what it does (maybe more than one line)
-License: What license is it under?
+Author: Scott Shepard
+Maintainer: <scott@shepardmail.com>
+Description: Hadley Wickham's babynames package includes lifetables provided by
+  the Social Security Administration (SSA). These tables have mortality rates for each
+  age during cencus years. This package extends those tables to with linear interpolation
+  to include mortality rates for each year.
+License: MIT
 LazyData: TRUE
+Imports: babynames, dplyr, plyr
