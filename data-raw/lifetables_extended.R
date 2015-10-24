@@ -49,4 +49,6 @@ lifetables_extended <- plyr::ldply(genders, function(g) {
   })
 })
 
+lifetables_extended <- lifetables_extended[!duplicated(lifetables_extended), ]
+
 save(lifetables_extended, file = "data/lifetables_extended.rdata", compress = "xz")
