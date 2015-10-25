@@ -24,12 +24,12 @@ interpolateForADecade <- function(lt_2_decades, extra = F) {
   out
 }
 
-interpolate <- function(n1, n2, extra3 = F) {
+interpolate <- function(n1, n2, extra5 = F) {
   #' Function takes two numbers and returns a vector of 11 numbers that
   #' fill in a decade of linear interpolation
   slope = (n2 - n1)/10
-  if(extra3 == T) {
-    c(n1, 1:9*slope + n1, n2, 1:3*slope + n2)
+  if(extra5 == T) {
+    c(n1, 1:9*slope + n1, n2, 1:5*slope + n2)
   } else {
     c(n1, 1:9*slope + n1, n2)
   }
