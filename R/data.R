@@ -20,3 +20,17 @@
 #' For further details, see \url{http://www.ssa.gov/oact/NOTES/as120/LifeTables_Body.html#wp1168594}
 #'
 "lifetables_extended"
+
+#' Probability of Living in 2014
+#'
+#' The probabily that someone was born in a given year is alive today.
+#' Derived from the extended life tables
+#'
+#' @format A data frame with three variables:
+#' \describe{
+#' \item{\code{year}}{year born}
+#' \item{\code{sex}}{Sex}
+#' \item{\code{px}}{Probability that someone born in year x is alive as of Jan 1, 2014}
+#' }
+#'
+"prob_living_2014"
