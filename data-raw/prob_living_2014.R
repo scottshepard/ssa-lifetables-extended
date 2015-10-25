@@ -13,4 +13,6 @@ prob_living_2014 <- plyr::ldply(1900:2013, function(year) {
   })
 })
 
+prob_living_2014$age <- 2014 - prob_living_2014$year
+
 save(prob_living_2014, file = "data/prob_living_2014.rdata", compress = "xz")
